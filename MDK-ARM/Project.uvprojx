@@ -339,7 +339,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,AIR001_DEV</Define>
               <Undefine></Undefine>
-              <IncludePath>..\Inc;.cmsis\include;RTE\_Project;.eide\deps;..\rtthread\include;..\rtthread\components\finsh;..\MDK-ARM;..\Libraries\AIR001xx_HAL_Driver\Inc;..\Libraries\CMSIS\Include;..\Libraries\BSP\AIR001_Core_Board;..\Libraries\CMSIS\Include</IncludePath>
+              <IncludePath>..\Inc;.cmsis\include;RTE\_Project;.eide\deps;..\rtthread\include;..\rtthread\components\finsh;..\MDK-ARM;..\Libraries\AIR001xx_HAL_Driver\Inc;..\Libraries\CMSIS\Include;..\Libraries\BSP\AIR001_Core_Board;..\Libraries\CMSIS\Include;..\Libraries\CMSIS\Device\AIR001xx\Include</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
