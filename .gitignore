@@ -1,0 +1,7 @@
+.vscode
+.idea
+JLinkLog.txt
+JLinkSettings.ini
+DebugConfig/
+.MDK-ARM.code-workspace
+build/

@@ -1,0 +1,297 @@
+{
+  "name": "Project",
+  "type": "ARM",
+  "dependenceList": [],
+  "srcDirs": [
+    ".eide/deps"
+  ],
+  "virtualFolder": {
+    "name": "<virtual_root>",
+    "files": [],
+    "folders": [
+      {
+        "name": "::CMSIS",
+        "files": [],
+        "folders": []
+      },
+      {
+        "name": "Application",
+        "files": [],
+        "folders": [
+          {
+            "name": "User",
+            "files": [
+              {
+                "path": "../Src/air001xx_hal_msp.c"
+              },
+              {
+                "path": "../Src/air001xx_it.c"
+              },
+              {
+                "path": "../Src/board.c"
+              },
+              {
+                "path": "../Src/main.c"
+              }
+            ],
+            "folders": []
+          }
+        ]
+      },
+      {
+        "name": "BSP",
+        "files": [],
+        "folders": [
+          {
+            "name": "Air001_Core_Board",
+            "files": [
+              {
+                "path": "../../../../../Libraries/BSP/AIR001_Core_Board/air001_Core_Board.c"
+              }
+            ],
+            "folders": []
+          }
+        ]
+      },
+      {
+        "name": "Common",
+        "files": [
+          {
+            "path": "../Src/system_air001xx.c"
+          },
+          {
+            "path": "startup_air001_dev.s"
+          }
+        ],
+        "folders": []
+      },
+      {
+        "name": "Drivers",
+        "files": [],
+        "folders": [
+          {
+            "name": "AIR001xx_HAL_Driver",
+            "files": [
+              {
+                "path": "../../../../../Libraries/AIR001xx_HAL_Driver/Src/air001xx_hal_cortex.c"
+              },
+              {
+                "path": "../../../../../Libraries/AIR001xx_HAL_Driver/Src/air001xx_hal_dma.c"
+              },
+              {
+                "path": "../../../../../Libraries/AIR001xx_HAL_Driver/Src/air001xx_hal_flash.c"
+              },
+              {
+                "path": "../../../../../Libraries/AIR001xx_HAL_Driver/Src/air001xx_hal_gpio.c"
+              },
+              {
+                "path": "../../../../../Libraries/AIR001xx_HAL_Driver/Src/air001xx_hal_iwdg.c"
+              },
+              {
+                "path": "../../../../../Libraries/AIR001xx_HAL_Driver/Src/air001xx_hal_pwr.c"
+              },
+              {
+                "path": "../../../../../Libraries/AIR001xx_HAL_Driver/Src/air001xx_hal_rcc_ex.c"
+              },
+              {
+                "path": "../../../../../Libraries/AIR001xx_HAL_Driver/Src/air001xx_hal_rcc.c"
+              },
+              {
+                "path": "../../../../../Libraries/AIR001xx_HAL_Driver/Src/air001xx_hal_uart.c"
+              },
+              {
+                "path": "../../../../../Libraries/AIR001xx_HAL_Driver/Src/air001xx_hal.c"
+              }
+            ],
+            "folders": []
+          }
+        ]
+      },
+      {
+        "name": "finsh",
+        "files": [
+          {
+            "path": "../rtthread/components/finsh/cmd.c"
+          },
+          {
+            "path": "../rtthread/components/finsh/finsh_port.c"
+          },
+          {
+            "path": "../rtthread/components/finsh/msh.c"
+          },
+          {
+            "path": "../rtthread/components/finsh/shell.c"
+          }
+        ],
+        "folders": []
+      },
+      {
+        "name": "rtthread",
+        "files": [],
+        "folders": [
+          {
+            "name": "core",
+            "files": [
+              {
+                "path": "../rtthread/src/clock.c"
+              },
+              {
+                "path": "../rtthread/src/components.c"
+              },
+              {
+                "path": "../rtthread/src/cpu.c"
+              },
+              {
+                "path": "../rtthread/src/idle.c"
+              },
+              {
+                "path": "../rtthread/src/ipc.c"
+              },
+              {
+                "path": "../rtthread/src/irq.c"
+              },
+              {
+                "path": "../rtthread/src/kservice.c"
+              },
+              {
+                "path": "../rtthread/src/mem.c"
+              },
+              {
+                "path": "../rtthread/src/memheap.c"
+              },
+              {
+                "path": "../rtthread/src/mempool.c"
+              },
+              {
+                "path": "../rtthread/src/object.c"
+              },
+              {
+                "path": "../rtthread/src/scheduler.c"
+              },
+              {
+                "path": "../rtthread/src/slab.c"
+              },
+              {
+                "path": "../rtthread/src/thread.c"
+              },
+              {
+                "path": "../rtthread/src/timer.c"
+              }
+            ],
+            "folders": []
+          },
+          {
+            "name": "libcpu",
+            "files": [
+              {
+                "path": "../rtthread/libcpu/arm/cortex-m0/context_rvds.S"
+              },
+              {
+                "path": "../rtthread/libcpu/arm/cortex-m0/cpuport.c"
+              }
+            ],
+            "folders": []
+          }
+        ]
+      }
+    ]
+  },
+  "outDir": "build",
+  "deviceName": null,
+  "packDir": null,
+  "miscInfo": {
+    "uid": "c5995c2da682e44a487b2007ca1a724d"
+  },
+  "targets": {
+    "Project": {
+      "excludeList": [],
+      "toolchain": "AC5",
+      "compileConfig": {
+        "cpuType": "Cortex-M0+",
+        "floatingPointHardware": "none",
+        "useCustomScatterFile": false,
+        "scatterFilePath": "<YOUR_SCATTER_FILE>.sct",
+        "storageLayout": {
+          "RAM": [
+            {
+              "tag": "IRAM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x20000000",
+                "size": "0x1000"
+              },
+              "isChecked": true,
+              "noInit": false
+            }
+          ],
+          "ROM": [
+            {
+              "tag": "IROM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x08000000",
+                "size": "0x8000"
+              },
+              "isChecked": true,
+              "isStartup": true
+            }
+          ]
+        },
+        "options": "null"
+      },
+      "uploader": "JLink",
+      "uploadConfig": {
+        "bin": "",
+        "baseAddr": "",
+        "cpuInfo": {
+          "vendor": "null",
+          "cpuName": "null"
+        },
+        "proType": 1,
+        "speed": 8000,
+        "otherCmds": ""
+      },
+      "uploadConfigMap": {
+        "JLink": {
+          "bin": "",
+          "baseAddr": "",
+          "cpuInfo": {
+            "vendor": "null",
+            "cpuName": "null"
+          },
+          "proType": 1,
+          "speed": 8000,
+          "otherCmds": ""
+        },
+        "OpenOCD": {
+          "bin": "",
+          "target": "stm32f1x",
+          "interface": "stlink",
+          "baseAddr": "0x08000000"
+        }
+      },
+      "custom_dep": {
+        "name": "default",
+        "incList": [
+          "../../../../../Libraries/CMSIS/Include",
+          "../../../../../Libraries/BSP/AIR001_Core_Board",
+          "../../../../../Libraries/CMSIS/Device/AIR001xx/Include",
+          "../Inc",
+          "../../../../../Libraries/AIR001xx_HAL_Driver/Inc",
+          ".cmsis/include",
+          "RTE/_Project",
+          ".eide/deps",
+          "../rtthread/include",
+          "../rtthread/components/finsh"
+        ],
+        "libList": [],
+        "sourceDirList": [],
+        "defineList": [
+          "USE_HAL_DRIVER",
+          "AIR001_DEV"
+        ]
+      }
+    }
+  },
+  "version": "3.3"
+}
