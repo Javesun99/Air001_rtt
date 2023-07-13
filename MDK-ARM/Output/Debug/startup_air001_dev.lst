@@ -340,13 +340,13 @@ ARM Macro Assembler    Page 6
   240 00000014                 END
               00000000 
               00000000 
-Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M0+ --depend=.\b
-uild\keil\startup_air001_dev.d -o.\build\keil\startup_air001_dev.o -I.\RTE\_Pro
-ject -ID:\MDK-ARM\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include -ID:\MDK-ARM\Packs\K
-eil\AIR001_DFP\1.0.1\Device\Include --predefine="__MICROLIB SETA 1" --predefine
-="__UVISION_VERSION SETA 535" --predefine="_RTE_ SETA 1" --predefine="_RTE_ SET
-A 1" --predefine="USE_HAL_DRIVER SETA 1" --predefine="AIR001_DEV SETA 1" --list
-=.\output\debug\startup_air001_dev.lst startup_air001_dev.s
+Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M0+ --apcs=inter
+work --depend=.\build\keil\startup_air001_dev.d -o.\build\keil\startup_air001_d
+ev.o -I.\RTE\_Project -ID:\MDK-ARM\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include -ID
+:\MDK-ARM\Packs\Keil\AIR001_DFP\1.0.1\Device\Include --predefine="__MICROLIB SE
+TA 1" --predefine="__UVISION_VERSION SETA 535" --predefine="_RTE_ SETA 1" --pre
+define="_RTE_ SETA 1" --predefine="USE_HAL_DRIVER SETA 1" --predefine="AIR001_D
+EV SETA 1" --list=.\output\debug\startup_air001_dev.lst startup_air001_dev.s
 
 
 

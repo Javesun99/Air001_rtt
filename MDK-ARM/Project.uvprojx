@@ -10,8 +10,8 @@
       <TargetName>Project</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
-      <pCCUsed>6160000::V6.16::ARMCLANG</pCCUsed>
-      <uAC6>1</uAC6>
+      <pCCUsed>5060960::V5.06 update 7 (build 960)::.\ARMCC</pCCUsed>
+      <uAC6>0</uAC6>
       <TargetOption>
         <TargetCommonOption>
           <Device>AIR001Dev</Device>
@@ -138,7 +138,7 @@
           </Flash1>
           <bUseTDR>1</bUseTDR>
           <Flash2>BIN\UL2CM3.DLL</Flash2>
-          <Flash3></Flash3>
+          <Flash3>"" ()</Flash3>
           <Flash4></Flash4>
           <pFcarmOut></pFcarmOut>
           <pFcarmGrp></pFcarmGrp>
@@ -322,7 +322,7 @@
             <PlainCh>0</PlainCh>
             <Ropi>0</Ropi>
             <Rwpi>0</Rwpi>
-            <wLevel>3</wLevel>
+            <wLevel>2</wLevel>
             <uThumb>0</uThumb>
             <uSurpInc>0</uSurpInc>
             <uC99>1</uC99>
@@ -339,7 +339,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,AIR001_DEV</Define>
               <Undefine></Undefine>
-              <IncludePath>..\..\..\..\..\Libraries\CMSIS\Include;..\..\..\..\..\Libraries\BSP\AIR001_Core_Board;..\..\..\..\..\Libraries\CMSIS\Device\AIR001xx\Include;..\Inc;..\..\..\..\..\Libraries\AIR001xx_HAL_Driver\Inc;.cmsis\include;RTE\_Project;.eide\deps;..\rtthread\include;..\rtthread\components\finsh;..\MDK-ARM</IncludePath>
+              <IncludePath>..\Inc;.cmsis\include;RTE\_Project;.eide\deps;..\rtthread\include;..\rtthread\components\finsh;..\MDK-ARM;..\Libraries\AIR001xx_HAL_Driver\Inc;..\Libraries\CMSIS\Include;..\Libraries\BSP\AIR001_Core_Board;..\Libraries\CMSIS\Include</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -504,54 +504,54 @@
           <GroupName>Drivers/AIR001xx_HAL_Driver</GroupName>
           <Files>
             <File>
+              <FileName>air001xx_hal.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Libraries\AIR001xx_HAL_Driver\Src\air001xx_hal.c</FilePath>
+            </File>
+            <File>
               <FileName>air001xx_hal_cortex.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../Libraries/AIR001xx_HAL_Driver/Src/air001xx_hal_cortex.c</FilePath>
+              <FilePath>..\Libraries\AIR001xx_HAL_Driver\Src\air001xx_hal_cortex.c</FilePath>
             </File>
             <File>
               <FileName>air001xx_hal_dma.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../Libraries/AIR001xx_HAL_Driver/Src/air001xx_hal_dma.c</FilePath>
+              <FilePath>..\Libraries\AIR001xx_HAL_Driver\Src\air001xx_hal_dma.c</FilePath>
             </File>
             <File>
               <FileName>air001xx_hal_flash.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../Libraries/AIR001xx_HAL_Driver/Src/air001xx_hal_flash.c</FilePath>
+              <FilePath>..\Libraries\AIR001xx_HAL_Driver\Src\air001xx_hal_flash.c</FilePath>
             </File>
             <File>
               <FileName>air001xx_hal_gpio.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../Libraries/AIR001xx_HAL_Driver/Src/air001xx_hal_gpio.c</FilePath>
+              <FilePath>..\Libraries\AIR001xx_HAL_Driver\Src\air001xx_hal_gpio.c</FilePath>
             </File>
             <File>
               <FileName>air001xx_hal_iwdg.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../Libraries/AIR001xx_HAL_Driver/Src/air001xx_hal_iwdg.c</FilePath>
+              <FilePath>..\Libraries\AIR001xx_HAL_Driver\Src\air001xx_hal_iwdg.c</FilePath>
             </File>
             <File>
               <FileName>air001xx_hal_pwr.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../Libraries/AIR001xx_HAL_Driver/Src/air001xx_hal_pwr.c</FilePath>
-            </File>
-            <File>
-              <FileName>air001xx_hal_rcc_ex.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../../../../../Libraries/AIR001xx_HAL_Driver/Src/air001xx_hal_rcc_ex.c</FilePath>
+              <FilePath>..\Libraries\AIR001xx_HAL_Driver\Src\air001xx_hal_pwr.c</FilePath>
             </File>
             <File>
               <FileName>air001xx_hal_rcc.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../Libraries/AIR001xx_HAL_Driver/Src/air001xx_hal_rcc.c</FilePath>
+              <FilePath>..\Libraries\AIR001xx_HAL_Driver\Src\air001xx_hal_rcc.c</FilePath>
+            </File>
+            <File>
+              <FileName>air001xx_hal_rcc_ex.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Libraries\AIR001xx_HAL_Driver\Src\air001xx_hal_rcc_ex.c</FilePath>
             </File>
             <File>
               <FileName>air001xx_hal_uart.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../Libraries/AIR001xx_HAL_Driver/Src/air001xx_hal_uart.c</FilePath>
-            </File>
-            <File>
-              <FileName>air001xx_hal.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../../../../../Libraries/AIR001xx_HAL_Driver/Src/air001xx_hal.c</FilePath>
+              <FilePath>..\Libraries\AIR001xx_HAL_Driver\Src\air001xx_hal_uart.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -576,7 +576,7 @@
             <File>
               <FileName>air001_Core_Board.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../Libraries/BSP/AIR001_Core_Board/air001_Core_Board.c</FilePath>
+              <FilePath>..\Libraries\BSP\AIR001_Core_Board\air001_Core_Board.c</FilePath>
             </File>
           </Files>
         </Group>
